@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    
+    </style>
+  </head>
+  <body>
+    <div class="main-image">
+     
+    </div>
+    <div class="container">
+    <img src="./images/illustration-hero.svg" alt="">
+        <h1>Order Summary</h1>
+        <p class="description">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+ 
+      <div class="price">
+        <article>
+        <img src="./images/icon-music.svg" alt="" class="secondary-image">
+       <div> <h4>Annual Plan</h4>
+         <p>$59.99/year</p>
+        </div> 
+        <!--Add the h4 and p into a div too so that i can use flex property when displaying the main div. Image is going to be the first item, the next div the second item and the button the third-->
+      </article>  <!--I can use again flex property to display flex the article content and the Change button-->
+        <button class="btn btn-change">Change</button>
+      </div>
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="buttons">
+      <button class="btn btn-primary">Proceed to payment</button>
+      <button class="btn btn-secondary">Cancel order</button>
+    </div>
   </div>
-</body>
+
+
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/andreeamiclaus">a_codes_</a>.
+    </div>
+  </body>
 </html>
